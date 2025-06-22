@@ -6,8 +6,8 @@
     --accent-color-active: #5ad6c6; /* Mint green acive */
     --bg-color: #F8F9FA;
     --text-color: #293241;
-    --heading-font: 'Poppins', sans-serif;
-    --body-font: 'Lato', sans-serif;
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Roboto', sans-serif;
 }
 
 /* Basic Reset & Global Styles */
@@ -40,11 +40,6 @@ h1, h2, h3 {
     color: var(--primary-color);
     margin: 0;
     padding: 0;
-}
-
-img {
-    max-width: 100%;
-    display: block;
 }
 
 /* Header & Navigation */
@@ -111,35 +106,6 @@ img {
 
 .nav-links a.active:hover {
     color: var(--accent-color-active);
-}
-
-/* Hero Section */
-.hero-section {
-    padding: 6rem 0;
-    background-color: #fff;
-}
-
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 3rem;
-}
-
-.hero-headline {
-    font-size: 3.2rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-}
-
-.hero-subheadline {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-}
-
-.hero-image img {
-    border-radius: 12px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
 /* Buttons */
@@ -213,6 +179,12 @@ img {
     align-items: center;
     color: var(--secondary-color);
     grid-area: icon;
+}
+
+.service-icon-container img {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: auto;
 }
 
 /* Testimonial Section */
