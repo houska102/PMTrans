@@ -99,6 +99,11 @@ h1, h2, h3 {
     height: 100%;
 }
 
+
+.nav-links a.sm-only {
+    display: none;
+}
+
 .nav-links a:hover,
 .nav-links a.active {
     color: var(--accent-color);
@@ -318,10 +323,6 @@ h1, h2, h3 {
     font-size: 0.9rem;
 }
 
-.sm-only {
-    display: none;
-}
-
 /* Responsive Design */
 @media (max-width: 900px) {
     .hero-grid, .address-map-grid {
@@ -409,7 +410,7 @@ h1, h2, h3 {
         gap: 1rem;
     }
 
-    .sm-only {
+    .nav-links a.sm-only.sm-only {
         display: block;
     }
 
