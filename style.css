@@ -174,9 +174,8 @@ h1, h2, h3 {
 
 /* Invert order for alternating layout */
 .alt-bg .service-grid {
-    grid-template-areas: "icon text";
+    grid-template-areas: "text icon";
 }
-
 
 .service-icon-container {
     display: flex;
@@ -410,7 +409,7 @@ h1, h2, h3 {
         gap: 1rem;
     }
 
-    .nav-links a.sm-only.sm-only {
+    .nav-links a.sm-only {
         display: block;
     }
 
