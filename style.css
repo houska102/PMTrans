@@ -361,7 +361,7 @@ h1, h2, h3 {
     .main-nav .hamburger {
         display: block;
         cursor: pointer;
-        color: 
+        color: var(--text-color);
     }
     .nav-links {
         padding-top: 0.5rem;
