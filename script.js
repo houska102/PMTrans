@@ -53,3 +53,79 @@ window.onload = () => {
   });
 
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+    if (galleryItems.length === 0) return;
+
+    let currentIndex = 0;
+
+    // Create the HTML content for the lightbox just once
+    const lightboxElem = document.createElement('div');
+    lightboxElem.innerHTML = `
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-img" src="">
+            <button class="lightbox-control lightbox-prev" style="display: none;"><</button>
+            <button class="lightbox-control lightbox-next" style="display: none;">></button>
+        </div>
+    `;
+    
+    const lightboxImg = lightboxElem.querySelector('.lightbox-img');
+    const prevButton = lightboxElem.querySelector('.lightbox-prev');
+    const nextButton = lightboxElem.querySelector('.lightbox-next');
+
+    const lightbox = basicLightbox.create(lightboxElem, {
+        onShow: (instance) => {
+            // Add keyboard navigation
+            document.addEventListener('keydown', onKeyDown);
+        },
+        onClose: (instance) => {
+            // Remove keyboard navigation
+            document.removeEventListener('keydown', onKeyDown);
+        }
+    });
+    
+    // Function to update the image and buttons
+    function updateLightbox(index) {
+        const item = galleryItems[index];
+        lightboxImg.src = item.href;
+        currentIndex = index;
+
+        // Update button visibility
+        prevButton.style.display = index > 0 ? 'block' : 'none';
+        nextButton.style.display = index < galleryItems.length - 1 ? 'block' : 'none';
+    }
+
+    // Keyboard navigation handler
+    function onKeyDown(e) {
+        if (e.key === 'ArrowLeft') {
+            if(currentIndex > 0) prevButton.click();
+        } else if (e.key === 'ArrowRight') {
+            if(currentIndex < galleryItems.length - 1) nextButton.click();
+        } else if (e.key === 'Escape') {
+            lightbox.close();
+        }
+    }
+
+    // Add click listeners to gallery items
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            updateLightbox(index);
+            lightbox.show();
+        });
+    });
+
+    // Add click listeners for the lightbox controls
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            updateLightbox(currentIndex - 1);
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < galleryItems.length - 1) {
+            updateLightbox(currentIndex + 1);
+        }
+    });
+});
