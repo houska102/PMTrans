@@ -1,0 +1,14 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Cache images for one year by default
+  <FilesMatch "\.(jpg|jpeg|png|gif|ico|svg|webp)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "max-age=31536000"
+  </FilesMatch>
+  # Cache js, css and fonts for 1 year
+  <FilesMatch "\.(js|css|woff2)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "max-age=31536000"
+  </FilesMatch>
+</IfModule>

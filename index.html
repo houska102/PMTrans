@@ -6,7 +6,15 @@
     <title>PM trans Ostrov s.r.o. - Logistika a Servis</title>
     
     <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css" defer>
+    
+    <link rel="preload" as="image" href="./assets/hero-original.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-600.woff2" type="woff2" crossorigin>
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-600italic.woff2" type="woff2" crossorigin>
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-700.woff2" type="woff2" crossorigin>
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-700italic.woff2" type="woff2" crossorigin>
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-italic.woff2" type="woff2" crossorigin>
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-regular.woff2" type="woff2" crossorigin>
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -36,9 +44,7 @@
     </header>
     <main id="main-content">
         <section class="hero-section">
-            <div class="container">
-                <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum assumenda soluta, maxime vero laudantium quidem provident ratione omnis pariatur optio accusamus ad eum sequi quos recusandae cupiditate consectetur incidunt voluptatibus.</p>
-            </div>
+            <div class="content">Váš partner v logistice a servisu.</p>
         </section>
         <section id="logistika" class="service-section">
             <div class="container service-grid">
@@ -48,7 +54,19 @@
                     <p>V logistice se naše firma pohybuje už 25 let. Díky tomu nabízíme efektivní komunikaci pro zajištění vašich potřeb a rychlá a kreativní řešení. Na naše řidiče je vždy spolehnutí.</p>
                 </div>
                 <div class="service-icon-container">
-                    <img height="450" width="600" src="./assets/section_1.webp" alt="Logistika" />
+                  <img
+                    height="300"
+                    width="400"
+                    src="./assets/section_1.webp"
+                    srcset="
+                      ./assets/section_1.webp 600w,
+                      ./assets/section_1_fit.webp 400w
+                    "
+                    sizes="(width <= 600px) 400px,
+                      600px"
+                    alt="Logistika"
+                    defer
+                  />
                 </div>
             </div>
         </section>
@@ -56,7 +74,19 @@
         <section id="servis" class="service-section alt-bg">
             <div class="container service-grid">
                   <div class="service-icon-container">
-                    <img height="450" width="600" src="./assets/section_2.webp" alt="Servis" />
+                    <img
+                      height="300"
+                      width="400"
+                      src="./assets/section_2.webp"
+                      srcset="
+                        ./assets/section_2.webp 600w,
+                        ./assets/section_2_fit.webp 400w
+                      "
+                      sizes="(width <= 600px) 400px,
+                        600px"
+                      alt="Servis"
+                      defer
+                    />
                 </div>
                 <div class="service-text">
                     <h2 class="section-title section-title--left">Servis vozidel</h2>
@@ -71,7 +101,19 @@
                     <p>Dále pro Vás provozujeme odtahovou službu. Odtáhneme Vám osobní, nákladní automobily, lesní techniku, traktory a vlastně cokoliv do 18 tun. Máme pro Vás i hydraulickou ruku 800 kg na 9 metrů.</p>
                 </div>
                 <div class="service-icon-container">
-                    <img height="450" width="600" src="./assets/section_3.webp" alt="Odtahova Sluzba" defer />
+                    <img
+                      height="300"
+                      width="400"
+                      src="./assets/section_3.webp"
+                      srcset="
+                        ./assets/section_3.webp 600w,
+                        ./assets/section_3_fit.webp 400w
+                      "
+                      sizes="(width <= 600px) 400px,
+                        600px"
+                      alt="Odtahova Sluzba"
+                      defer
+                    />
                 </div>
             </div>
         </section>
@@ -79,7 +121,19 @@
           <section id="prestavby" class="service-section alt-bg">
             <div class="container service-grid">
                   <div class="service-icon-container">
-                    <img height="450" width="600" src="./assets/section_4.webp" alt="Prestavby" defer />
+                    <img
+                      height="300"
+                      width="400"
+                      src="./assets/section_4.webp"
+                      srcset="
+                        ./assets/section_4.webp 600w,
+                        ./assets/section_4_fit.webp 400w
+                      "
+                      sizes="(width <= 600px) 400px,
+                        600px"
+                      alt="Prestavby"
+                      defer
+                    />
                 </div>
                 <div class="service-text">
                     <h2 class="section-title section-title--left">Přestavby vozidel</h2>
