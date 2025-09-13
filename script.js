@@ -38,7 +38,7 @@ window.onload = () => {
   document.querySelector('.hamburger').addEventListener('click', toggleMenu)
 
 
-  const sections = document.querySelectorAll('#main-content>section');
+  const sections = document.querySelectorAll('#main-content>article');
   window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
     for (let section of sections) {

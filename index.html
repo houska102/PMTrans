@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PM trans Ostrov s.r.o. - Logistika a Servis</title>
     
+    <meta name="description" content="Váš partner v logistice a servisu.">
+    
+    <link rel="preload" as="image" href="./assets/hero-original.webp" type="image/webp" fetchpriority="high" media="(resolution: 1dppx)">
+    <link rel="preload" as="image" href="./assets/hero-large.webp" type="image/webp" fetchpriority="high" media="(resolution: 2dppx)">
+    <link rel="preload" as="image" href="./assets/hero-medium.webp" type="image/webp" fetchpriority="high" media="(resolution: 4dppx)">
+    <link rel="preload" as="image" href="./assets/hero-small.webp" type="image/webp" fetchpriority="high" media="(resolution: 8dppx)">
+
+
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-600.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-600italic.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-700.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-700italic.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-italic.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-regular.woff2" type="font/woff2" crossorigin>
+
     <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css" defer>
     
-    <link rel="preload" as="image" href="./assets/hero-original.webp" type="image/webp" fetchpriority="high">
-    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-600.woff2" type="woff2" crossorigin>
-    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-600italic.woff2" type="woff2" crossorigin>
-    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-700.woff2" type="woff2" crossorigin>
-    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-700italic.woff2" type="woff2" crossorigin>
-    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-italic.woff2" type="woff2" crossorigin>
-    <link rel="preload" as="font" href="./assets/fonts/roboto-v48-latin_latin-ext-regular.woff2" type="woff2" crossorigin>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" >
     <script src="script.js" defer></script>
   </head>
   <body>
     <header class="main-header">
         <div class="container">
             <nav class="main-nav">
-                <a href="#" class="logo">PM trans Ostrov s.r.o.</a>
+                <a href="#" class="logo" role="heading" aria-level="1">PM trans Ostrov s.r.o.</a>
                 <ul class="nav-links">
                     <li><a href="#logistika" alt="Logistika">Logistika</a></li>
                     <li><a href="#servis" alt="Servis">Servis</a></li>
@@ -46,7 +53,7 @@
         <section class="hero-section">
             <div class="content">Váš partner v logistice a servisu.</p>
         </section>
-        <section id="logistika" class="service-section">
+        <article id="logistika" class="service-section">
             <div class="container service-grid">
                 <div class="service-text">
                     <h2 class="section-title section-title--left">Logistika</h2>
@@ -59,19 +66,16 @@
                     width="400"
                     src="./assets/section_1.webp"
                     srcset="
-                      ./assets/section_1.webp 600w,
-                      ./assets/section_1_fit.webp 400w
+                      ./assets/section_1.webp 1x,
+                      ./assets/section_1_fit.webp 2x
                     "
-                    sizes="(width <= 600px) 400px,
-                      600px"
                     alt="Logistika"
                     defer
                   />
                 </div>
             </div>
-        </section>
-
-        <section id="servis" class="service-section alt-bg">
+        </article>
+        <article id="servis" class="service-section alt-bg">
             <div class="container service-grid">
                   <div class="service-icon-container">
                     <img
@@ -79,11 +83,9 @@
                       width="400"
                       src="./assets/section_2.webp"
                       srcset="
-                        ./assets/section_2.webp 600w,
-                        ./assets/section_2_fit.webp 400w
+                        ./assets/section_2.webp 1x,
+                        ./assets/section_2_fit.webp 2x
                       "
-                      sizes="(width <= 600px) 400px,
-                        600px"
                       alt="Servis"
                       defer
                     />
@@ -93,8 +95,8 @@
                     <p>Naše dílna zvládne opravit vše od osobních vozů až po těžkotonážní stroje. Specializujeme se na značky Man a Multicar, ale nejsou nám cizí žádná vozidla. Opravujeme i úklidové vozy pro Marius Pedersen. Máme talentované automechaniky, kteří se pohybují v oboru přes 30 let.</p>
                 </div>
             </div>
-        </section>
-        <section id="odtah" class="service-section">
+        </article>
+        <article id="odtah" class="service-section">
             <div class="container service-grid">
                 <div class="service-text">
                     <h2 class="section-title section-title--left">Odtahová služba</h2>
@@ -106,19 +108,17 @@
                       width="400"
                       src="./assets/section_3.webp"
                       srcset="
-                        ./assets/section_3.webp 600w,
-                        ./assets/section_3_fit.webp 400w
+                        ./assets/section_3.webp 1x,
+                        ./assets/section_3_fit.webp 2x
                       "
-                      sizes="(width <= 600px) 400px,
-                        600px"
                       alt="Odtahova Sluzba"
                       defer
                     />
                 </div>
             </div>
-        </section>
+        </article>
 
-          <section id="prestavby" class="service-section alt-bg">
+          <article id="prestavby" class="service-section alt-bg">
             <div class="container service-grid">
                   <div class="service-icon-container">
                     <img
@@ -126,11 +126,9 @@
                       width="400"
                       src="./assets/section_4.webp"
                       srcset="
-                        ./assets/section_4.webp 600w,
-                        ./assets/section_4_fit.webp 400w
+                        ./assets/section_4.webp 1x,
+                        ./assets/section_4_fit.webp 2x
                       "
-                      sizes="(width <= 600px) 400px,
-                        600px"
                       alt="Prestavby"
                       defer
                     />
@@ -140,7 +138,7 @@
                     <p>Provádíme přestavby vozidel na kontejnerové a sklápěcí typy. Montujeme pro Vás hydraulické ruky. Máme za sebou i přestavby z nákladních vozů na odtahová vozidla. Spolupracujeme s firmou DUCOM. Veškerá potřebná dokumentace je samozřejmostí.</p>
                 </div>
             </div>
-        </section>
+        </article>
 
         <section id="kontakty" class="contact-section transparent-subtle">
             <div class="container">
@@ -165,77 +163,78 @@
             </div>
         </section>
         
-        <section id="address-map-section" class="transparent-subtle">
+        <article id="address-map-section" class="transparent-subtle">
             <h2 class="section-title">Naše provozovna</h2>
             <div class="container address-map-grid">
-                <div class="address-details-container">
+                <section class="address-details-container">
                   <h3>Adresa</h3>
                   <address class="address-details">
-                      Jáchymovská 1424<br>
-                      Ostrov 363 01<br>
-                      Česká Republika
+                      <p>
+                        Jáchymovská 1424<br>
+                        Ostrov 363 01<br>
+                        Česká Republika
+                      </p>
                   </address>
-                </div>
-                <div class="map-container">
+                </section>
+                <section class="map-container">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d794.0945443962256!2d12.946903253801041!3d50.31602285176648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a0a189c27cdd83%3A0xe17c0d1ab925a8a0!2sPM%20Trans%20Ostrov%20s.r.o.!5e0!3m2!1scs!2scz!4v1750363277801!5m2!1scs!2scz" 
                         width="600" 
-                        height="450" 
-                        style="border:0;" 
+                        height="450"
                         allowfullscreen=""
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-                </div>
+                </section>
             </div>
-        </section>
+        </article>
         <section id="gallery" class="gallery-section transparent-subtle">
             <div class="container">
                 <h2 class="section-title">Galerie</h2>
                 <div class="gallery-grid">
                     <a href="./assets/galerie/galerie_full_1.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_1.webp" alt="Popis obrazku 1">
+                        <img src="./assets/galerie/galerie_thumb_1.webp" alt="Popis obrazku 1" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_2.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_2.webp" alt="Popis obrazku 2">
+                        <img src="./assets/galerie/galerie_thumb_2.webp" alt="Popis obrazku 2" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_3.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_3.webp" alt="Popis obrazku 3">
+                        <img src="./assets/galerie/galerie_thumb_3.webp" alt="Popis obrazku 3" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_4.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_4.webp" alt="Popis obrazku 4">
+                        <img src="./assets/galerie/galerie_thumb_4.webp" alt="Popis obrazku 4" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_5.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_5.webp" alt="Popis obrazku 5">
+                        <img src="./assets/galerie/galerie_thumb_5.webp" alt="Popis obrazku 5" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_6.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_6.webp" alt="Popis obrazku 6">
+                        <img src="./assets/galerie/galerie_thumb_6.webp" alt="Popis obrazku 6" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_7.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_7.webp" alt="Popis obrazku 7">
+                        <img src="./assets/galerie/galerie_thumb_7.webp" alt="Popis obrazku 7" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_8.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_8.webp" alt="Popis obrazku 8">
+                        <img src="./assets/galerie/galerie_thumb_8.webp" alt="Popis obrazku 8" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_9.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_9.webp" alt="Popis obrazku 9">
+                        <img src="./assets/galerie/galerie_thumb_9.webp" alt="Popis obrazku 9" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_10.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_10.webp" alt="Popis obrazku 10">
+                        <img src="./assets/galerie/galerie_thumb_10.webp" alt="Popis obrazku 10" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_11.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_11.webp" alt="Popis obrazku 11">
+                        <img src="./assets/galerie/galerie_thumb_11.webp" alt="Popis obrazku 11" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_12.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_12.webp" alt="Popis obrazku 12">
+                        <img src="./assets/galerie/galerie_thumb_12.webp" alt="Popis obrazku 12" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_13.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_13.webp" alt="Popis obrazku 13">
+                        <img src="./assets/galerie/galerie_thumb_13.webp" alt="Popis obrazku 13" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_14.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_14.webp" alt="Popis obrazku 14">
+                        <img src="./assets/galerie/galerie_thumb_14.webp" alt="Popis obrazku 14" loading="lazy" />
                     </a>
                     <a href="./assets/galerie/galerie_full_15.webp" class="gallery-item">
-                        <img src="./assets/galerie/galerie_thumb_15.webp" alt="Popis obrazku 15">
+                        <img src="./assets/galerie/galerie_thumb_15.webp" alt="Popis obrazku 15" loading="lazy" />
                     </a>
                 </div>
             </div>
