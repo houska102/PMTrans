@@ -157,11 +157,15 @@ h1, h2, h3 {
 }
 
 .logo {
+    text-decoration: none;
+}
+.logo h1 {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--primary-color);
     text-decoration: none;
     padding: 1rem 0.5rem;
+    margin: 0;
 }
 
 .nav-links {

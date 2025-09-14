@@ -6,6 +6,139 @@
     <title>PM trans Ostrov s.r.o. - Logistika a Servis</title>
     
     <meta name="description" content="Váš partner v logistice a servisu.">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutomotiveBusiness",
+        "@id": "PmTransOrg",
+        "name": "PM trans Ostrov s.r.o.",
+        "url": "http://pmtrans.eu",
+        "email": "pmtrans@volny.cz",
+        "telephone": "+420 775 334 001",
+        "slogan": "Váš partner v logistice a servisu.",
+        "hasMap": "https://maps.app.goo.gl/pBRMrqE2xUvZCKmB6",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ostrov",
+          "postalCode": "363 01",
+          "streetAddress": "Jáchymovská 1424",
+          "addressCountry": {
+            "@type": "Country",
+            "name": "Česká Republika"
+          }
+        },
+        "contactPoints": [
+          {
+            "@type": "ContactPoint",
+            "name": "Michal Bureš",
+            "telephone": "+420 775 334 001",
+            "contactType": "Servis a odtahová služba",
+            "areaServed": "CZ"
+          },
+          {
+            "@type": "ContactPoint",
+            "name": "Barbora Klausová",
+            "telephone": "+420 775 334 011",
+            "contactType": "Logistika",
+            "areaServed": "CZ"
+          },
+          {
+            "@type": "ContactPoint",
+            "name": "Pavel Černík",
+            "telephone": "+420 775 334 004",
+            "contactType": "Skladování",
+            "areaServed": "CZ"
+          }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "itemListElement": [
+              {
+                "@type": "Service",
+                "name": "Logistika",
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "itemListElement": [
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Nákladní autodoprava"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Nadrozměrná autodoprava"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Dodávková autodoprava"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Skladování"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "Service",
+                "name": "Servis",
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "itemListElement": [
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Servis vozidel"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Přestavby vozidel"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Odtahová služba"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "07:30",
+            "closes": "17:00"
+          }
+        ]
+      }
+    </script>
     
     <link rel="preload" as="image" href="./assets/hero-original.webp" type="image/webp" fetchpriority="high" media="(resolution: 1dppx)">
     <link rel="preload" as="image" href="./assets/hero-large.webp" type="image/webp" fetchpriority="high" media="(resolution: 2dppx)">
@@ -27,10 +160,40 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "WebContent",
+          "name": "PM trans Ostrov",
+          "alternateName": [
+            "PMtrans Ostrov",
+            "PM trans Ostrov s.r.o.",
+            "PM trans"
+          ],
+          "description": "Nabízíme kamionovou autodopravu, logistiku, skladování a servis vozidel osobních i nákladních.",
+          "keywords": [
+            "autodoprava",
+            "kamionová doprava",
+            "autoservis",
+            "servis",
+            "logistika",
+            "odtahová služba",
+            "servis nákladních vozů",
+            "NON-STOP",
+            "palety",
+            "nadrozměr"
+          ],
+          "mainEntity": {
+              "@id": "PmTransOrg"
+          }
+      }
+      </script>
     <header class="main-header">
         <div class="container">
             <nav class="main-nav">
-                <a href="#" class="logo" role="heading" aria-level="1">PM trans Ostrov s.r.o.</a>
+                <a href="#" class="logo">
+                  <h1>PM trans Ostrov s.r.o.</h1>
+                </a>
                 <ul class="nav-links">
                     <li><a href="#logistika" alt="Logistika">Logistika</a></li>
                     <li><a href="#servis" alt="Servis">Servis</a></li>
@@ -140,7 +303,7 @@
             </div>
         </article>
 
-        <section id="kontakty" class="contact-section transparent-subtle">
+        <article id="kontakty" class="contact-section transparent-subtle">
             <div class="container">
                 <h2 class="section-title">Kontakty</h2>
                 <div class="contact-grid">
@@ -161,7 +324,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </article>
         
         <article id="address-map-section" class="transparent-subtle">
             <h2 class="section-title">Naše provozovna</h2>
@@ -187,7 +350,7 @@
                 </section>
             </div>
         </article>
-        <section id="gallery" class="gallery-section transparent-subtle">
+        <article id="gallery" class="gallery-section transparent-subtle">
             <div class="container">
                 <h2 class="section-title">Galerie</h2>
                 <div class="gallery-grid">
@@ -238,7 +401,7 @@
                     </a>
                 </div>
             </div>
-        </section>
+        </article>
     </main>
     
     <footer class="main-footer-bottom">
